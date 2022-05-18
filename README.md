@@ -19,6 +19,6 @@ nvim +:PackerSync
 #### Windows
 Run this in your terminal:
 ```powershell
-git clone https://github.com/Mr1cecream/nvim-dots ~/AppData/Local/nvim
+git clone https://github.com/Mr1cecream/nvim-dots "$env:LOCALAPPDATA\nvim"
 nvim +:PackerSync
 ```
