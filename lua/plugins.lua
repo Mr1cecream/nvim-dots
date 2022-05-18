@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- lsp and autocomplete
     use 'neovim/nvim-lspconfig'
+    use 'williamboman/nvim-lsp-installer'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
@@ -31,7 +32,6 @@ return require('packer').startup(function(use)
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'sheerun/vim-polyglot', setup = require('plugconf/polyglot')}
     -- language servers
-    use 'Omnisharp/omnisharp-vim'
     use 'elkowar/yuck.vim'
     -- colorschemes
     use 'Shatur/neovim-ayu'

@@ -5,7 +5,11 @@ local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
 
-local servers = { 'rust_analyzer', 'sumneko_lua', 'omnisharp' }
+require('nvim-lsp-installer').setup {
+    automatic_installation = true
+}
+
+local servers = { 'rust_analyzer', 'sumneko_lua', 'csharp_ls', 'bashls', 'html' }
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
         on_attach = on_attach,
