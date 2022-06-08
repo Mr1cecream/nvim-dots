@@ -9,3 +9,4 @@ require('plugconf/autopairs') -- load autopairs config module
 require('plugconf/neoscroll') -- load neoscroll config module
 require('plugconf/indent-blankline') -- load indent-blankline config module
 require('plugconf/treesitter') -- load nvim-treesitter config module
+require('plugconf/trouble') -- load trouble.nvim config module
