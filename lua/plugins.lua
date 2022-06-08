@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
     use 'windwp/nvim-autopairs'
+    use 'folke/trouble.nvim'
     -- tools
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-tree.lua'
@@ -23,7 +24,6 @@ return require('packer').startup(function(use)
     }
 
     use 'karb94/neoscroll.nvim'
-    use 'lukas-reineke/indent-blankline.nvim'
 
     use 'preservim/nerdcommenter'
     -- icons
@@ -31,8 +31,13 @@ return require('packer').startup(function(use)
     -- syntax highlighting
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'sheerun/vim-polyglot', setup = require('plugconf/polyglot')}
+    use {'folke/todo-comments.nvim',
+        config = require('todo-comments').setup()}
+    use 'lukas-reineke/indent-blankline.nvim'
     -- language servers
     use 'elkowar/yuck.vim'
     -- colorschemes
     use 'Shatur/neovim-ayu'
+
+    use {'lewis6991/impatient.nvim', setup = require('impatient')}
 end)

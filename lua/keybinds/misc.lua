@@ -23,4 +23,8 @@ keymap('n', [[<C-l>]], [[<C-w>l]], opts)
 -- keymap('n', [[<C-H>]], [[:vertical resize -2<CR]], opts)
 -- keymap('n', [[<C-L>]], [[:vertical resize +2<CR]], opts)
 
-
+-- move lines
+keymap('n', '<A-j>', ':m .+1<CR>==', opts)
+keymap('n', '<A-k>', ':m .-2<CR>==', opts)
+keymap('v', '<A-j>', ':m .+1<CR>gv=gv', opts)
+keymap('v', '<A-k>', ':m .-2<CR>gv=gv', opts)
