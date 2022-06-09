@@ -1,5 +1,11 @@
-require('opts') -- load options module
-require('plugins') -- load plugins module
-require('colors') -- load colors module
-require('plugconf') -- load plugin configs module
-require('keybinds') -- load keybinds module
+local modules = {
+    'opts', -- load options module
+    'plugins', -- load plugins module
+    'colors', -- load colors module
+    'plugconf', -- load plugin configs module
+    'keybinds', -- load keybinds module
+}
+
+for _, mod in ipairs(modules) do
+    require(mod)
+end
