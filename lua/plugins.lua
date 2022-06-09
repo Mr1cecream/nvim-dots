@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
         requires = { 'nvim-lua/plenary.nvim' }
     }
     use 'zane-/howdoi.nvim'
+    use { 'filipdutescu/renamer.nvim', branch = 'master' }
 
     use { 'phaazon/hop.nvim', branch = 'v1',
         config = require('hop').setup() }
