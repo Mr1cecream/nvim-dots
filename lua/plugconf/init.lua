@@ -8,6 +8,7 @@ local configs = {
     'lualine', -- load lualine config module
     'neoscroll', -- load neoscroll config module
     'nerdcommenter', -- load nerdcommenter config module
+    'numb', -- load numb.nvim config module
     'nvimtree', -- load nvim-tree config module
     'telescope', -- load telescope config module
     'toggleterm', -- load toggleterm config module

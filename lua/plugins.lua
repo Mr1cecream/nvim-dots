@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
 
     use { 'phaazon/hop.nvim', branch = 'v1',
         config = require('hop').setup() }
+    use 'nacro90/numb.nvim'
     use 'karb94/neoscroll.nvim'
     use 'preservim/nerdcommenter'
     use { 'danymat/neogen',
