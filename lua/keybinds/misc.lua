@@ -3,10 +3,10 @@ local opts = { noremap = true, silent = true }
 
 -- refresh config
 keymap('n',
-    [[<Leader><Leader>]],
+    '<Leader><Leader>',
     function()
         _LOADED = nil
-        vim.cmd[[source $MYVIMRC]]
+        vim.cmd [[source $MYVIMRC]]
     end,
     opts
 )
@@ -15,19 +15,22 @@ keymap('n',
 keymap('n', '<Leader>sp', '<CMD>PackerSync<CR>', opts)
 
 -- window navigation
-keymap('n', [[<C-h>]], [[<C-w>h]], opts)
-keymap('n', [[<C-j>]], [[<C-w>j]], opts)
-keymap('n', [[<C-k>]], [[<C-w>k]], opts)
-keymap('n', [[<C-l>]], [[<C-w>l]], opts)
+keymap('n', '<C-h>', '<C-w>h', opts)
+keymap('n', '<C-j>', '<C-w>j', opts)
+keymap('n', '<C-k>', '<C-w>k', opts)
+keymap('n', '<C-l>', '<C-w>l', opts)
 
 -- resize
--- keymap('n', [[<C-K>]], [[:resize -2<CR]], opts)
--- keymap('n', [[<C-J>]], [[:resize +2<CR]], opts)
--- keymap('n', [[<C-H>]], [[:vertical resize -2<CR]], opts)
--- keymap('n', [[<C-L>]], [[:vertical resize +2<CR]], opts)
+-- keymap('n', '<C-K>', '<CMD>resize -2<CR', opts)
+-- keymap('n', '<C-J>', '<CMD>resize +2<CR', opts)
+-- keymap('n', '<C-H>', '<CMD>vertical resize -2<CR', opts)
+-- keymap('n', '<C-L>', '<CMD>vertical resize +2<CR', opts)
 
 -- move lines
-keymap('n', '<A-j>', ':m .+1<CR>==', opts)
-keymap('n', '<A-k>', ':m .-2<CR>==', opts)
-keymap('v', '<A-j>', ':m .+1<CR>gv=gv', opts)
-keymap('v', '<A-k>', ':m .-2<CR>gv=gv', opts)
+keymap('n', '<A-j>', '<CMD>m .+1<CR>==', opts)
+keymap('n', '<A-k>', '<CMD>m .-2<CR>==', opts)
+keymap('v', '<A-j>', '<CMD>m .+1<CR>gv=gv', opts)
+keymap('v', '<A-k>', '<CMD>m .-2<CR>gv=gv', opts)
+
+-- Un-highlight
+keymap('n', '<C-L>', '<CMD>noh<CR>')
