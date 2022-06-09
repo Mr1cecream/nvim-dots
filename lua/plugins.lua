@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     use {'nvim-telescope/telescope.nvim',
         requires = { 'nvim-lua/plenary.nvim' }
     }
+    use 'zane-/howdoi.nvim'
 
     use 'karb94/neoscroll.nvim'
     use 'preservim/nerdcommenter'
