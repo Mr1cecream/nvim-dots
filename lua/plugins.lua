@@ -18,14 +18,15 @@ return require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-tree.lua'
     use {'akinsho/bufferline.nvim', tag = "v2.*"}
+
     use {'akinsho/toggleterm.nvim', tag = "v1.*"}
     use {'nvim-telescope/telescope.nvim',
         requires = { 'nvim-lua/plenary.nvim' }
     }
 
     use 'karb94/neoscroll.nvim'
-
     use 'preservim/nerdcommenter'
+    use 'max397574/better-escape.nvim'
     -- icons
     use 'kyazdani42/nvim-web-devicons'
     -- syntax highlighting
@@ -39,5 +40,5 @@ return require('packer').startup(function(use)
     -- colorschemes
     use 'Shatur/neovim-ayu'
 
-    use {'lewis6991/impatient.nvim', setup = require('impatient')}
+    use {'lewis6991/impatient.nvim', config = require('impatient')}
 end)

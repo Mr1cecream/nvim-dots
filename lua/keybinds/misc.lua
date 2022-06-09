@@ -6,7 +6,7 @@ keymap('n',
     [[<Leader><Leader>]],
     function()
         _LOADED = nil
-        vim.cmd[[source %]]
+        vim.cmd[[source $MYVIMRC]]
     end,
     opts
 )

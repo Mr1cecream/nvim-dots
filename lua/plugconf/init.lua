@@ -11,6 +11,7 @@ local configs = {
     'indent-blankline', -- load indent-blankline.nvim config module
     'treesitter', -- load treesitter.nvim config module
     'trouble', -- load trouble.nvim config module
+    'better-escape', -- load better-escape.nvim config module
 }
 
 for _, conf in ipairs(configs) do
