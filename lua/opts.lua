@@ -24,5 +24,4 @@ vim.cmd [[
 	syntax enable
 	filetype plugin on
 	filetype plugin indent on
-    autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
 ]]

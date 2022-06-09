@@ -1,9 +1,5 @@
 local keymap = vim.keymap.set
+local opts = { noremap = true, silent = true }
 
-keymap('n',
-    [[<Leader>ff]],
-    function ()
-        require('telescope.builtin').find_files()
-    end,
-    { noremap = true, silent = true }
-)
+keymap('n', 'ff', '<CMD>Telescope find_files<CR>', opts)
+keymap('n', 'fb', '<CMD>Telescope buffers<CR>', opts)

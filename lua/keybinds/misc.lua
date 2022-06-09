@@ -11,6 +11,9 @@ keymap('n',
     opts
 )
 
+-- sync packer
+keymap('n', '<Leader>sp', '<CMD>PackerSync<CR>', opts)
+
 -- window navigation
 keymap('n', [[<C-h>]], [[<C-w>h]], opts)
 keymap('n', [[<C-j>]], [[<C-w>j]], opts)
