@@ -8,6 +8,7 @@ require('nvim-treesitter.configs').setup {
         'lua',
         'make',
         'markdown',
+        'norg',
         'rasi',
         'rust',
         'scss',

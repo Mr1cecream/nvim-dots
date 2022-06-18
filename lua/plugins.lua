@@ -27,22 +27,21 @@ return require('packer').startup(function(use)
     use 'zane-/howdoi.nvim'
     use { 'filipdutescu/renamer.nvim', branch = 'master' }
 
-    use { 'phaazon/hop.nvim', branch = 'v1',
-        config = require('hop').setup() }
+    use { 'phaazon/hop.nvim', branch = 'v1', config = require('hop').setup() }
     use 'nacro90/numb.nvim'
     use 'karb94/neoscroll.nvim'
     use 'preservim/nerdcommenter'
-    use { 'danymat/neogen',
-        config = require('neogen').setup() }
+    use { 'danymat/neogen', config = require('neogen').setup() }
     use 'max397574/better-escape.nvim'
     use 'tpope/vim-repeat'
+
+    use 'nvim-neorg/neorg'
     -- icons
     use 'kyazdani42/nvim-web-devicons'
     -- syntax highlighting
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'sheerun/vim-polyglot', setup = require('plugconf/polyglot') }
-    use { 'folke/todo-comments.nvim',
-        config = require('todo-comments').setup() }
+    use { 'folke/todo-comments.nvim', config = require('todo-comments').setup() }
     use 'lukas-reineke/indent-blankline.nvim'
     -- language servers
     use 'elkowar/yuck.vim'

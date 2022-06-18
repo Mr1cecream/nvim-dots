@@ -6,6 +6,7 @@ local configs = {
     'indent-blankline', -- load indent-blankline.nvim config module
     'lsp', -- load nvim-lsp config module
     'lualine', -- load lualine config module
+    'neorg', -- load neorg config module
     'neoscroll', -- load neoscroll config module
     'nerdcommenter', -- load nerdcommenter config module
     'numb', -- load numb.nvim config module
@@ -17,5 +18,5 @@ local configs = {
 }
 
 for _, conf in ipairs(configs) do
-    require('plugconf/'..conf)
+    require('plugconf/' .. conf)
 end
