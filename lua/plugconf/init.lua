@@ -1,3 +1,5 @@
+require('impatient')
+
 local configs = {
     'autopairs', -- load autopairs config module
     'better-escape', -- load better-escape.nvim config module
@@ -20,3 +22,7 @@ local configs = {
 for _, conf in ipairs(configs) do
     require('plugconf/' .. conf)
 end
+
+require('hop').setup()
+require('neogen').setup()
+require('todo-comments').setup()
