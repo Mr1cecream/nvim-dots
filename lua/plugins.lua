@@ -24,8 +24,8 @@ return require('packer').startup(function(use)
     use { 'nvim-telescope/telescope.nvim',
         requires = { 'nvim-lua/plenary.nvim' }
     }
+    use { 'hood/popui.nvim', requires = { 'RishabhRD/popfix' } }
     use 'zane-/howdoi.nvim'
-    use { 'filipdutescu/renamer.nvim', branch = 'master' }
 
     use { 'phaazon/hop.nvim', branch = 'v1' }
     use 'nacro90/numb.nvim'
@@ -45,6 +45,9 @@ return require('packer').startup(function(use)
     use 'lukas-reineke/indent-blankline.nvim'
     -- language servers
     use 'elkowar/yuck.vim'
+    -- language specific
+    use 'simrat39/rust-tools.nvim'
+    use 'Saecki/crates.nvim'
     -- colorschemes
     use 'Shatur/neovim-ayu'
 

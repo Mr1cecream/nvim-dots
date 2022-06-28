@@ -1,4 +1,4 @@
-local cmp = require'cmp'
+local cmp = require 'cmp'
 
 cmp.setup({
     snippet = {
@@ -22,6 +22,8 @@ cmp.setup({
         { name = 'vsnip' },
     }, {
         { name = 'buffer' },
+        { name = 'path' },
+        { name = 'cmdline' }
     })
 })
 
@@ -41,3 +43,4 @@ cmp.setup.cmdline(':', {
     })
 })
 
+vim.cmd [[autocmd FileType toml lua require('cmp').setup.buffer { sources = { { name = 'crates' } } }]]

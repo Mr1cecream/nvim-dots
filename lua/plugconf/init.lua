@@ -13,6 +13,7 @@ local configs = {
     'nerdcommenter', -- load nerdcommenter config module
     'numb', -- load numb.nvim config module
     'nvimtree', -- load nvim-tree config module
+    'popui', -- load popui.nvim config module
     'telescope', -- load telescope config module
     'toggleterm', -- load toggleterm config module
     'treesitter', -- load treesitter.nvim config module
@@ -26,3 +27,5 @@ end
 require('hop').setup()
 require('neogen').setup()
 require('todo-comments').setup()
+require('rust-tools').setup()
+require('crates').setup()

@@ -34,3 +34,6 @@ keymap('v', '<A-k>', '<CMD>m .-2<CR>gv=gv', opts)
 
 -- Un-highlight
 keymap('n', '<C-L>', '<CMD>noh<CR>')
+
+-- Hop
+keymap('n', 't', '<CMD>HopChar2<CR>', opts)
