@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-repeat'
     use 'jghauser/mkdir.nvim'
 
+    use 'ahmedkhalf/project.nvim'
     use 'nvim-neorg/neorg'
     -- icons
     use 'kyazdani42/nvim-web-devicons'
