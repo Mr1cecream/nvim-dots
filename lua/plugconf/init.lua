@@ -1,5 +1,8 @@
 require('impatient')
 
+--- Protected require and setup
+---@param module string
+---@param config any
 function PSetup(module, config)
     if module == nil then
         return
@@ -41,3 +44,4 @@ PSetup('rust-tools')
 PSetup('crates')
 PSetup('indent_blankline')
 PSetup('Comment')
+PSetup('which-key')

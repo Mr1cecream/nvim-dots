@@ -1,5 +1,8 @@
 vim = vim
 
+--- Protected require
+---@param module string
+---@return table
 function PRequire(module)
     local ok, loaded = pcall(require, module)
     if not ok then
