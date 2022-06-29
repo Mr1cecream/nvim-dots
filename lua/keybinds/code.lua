@@ -9,3 +9,5 @@ keymap('n', 'ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
 keymap('n', 'cd', '<CMD>lua vim.lsp.buf.definition()<CR>', opts)
 -- type definition
 keymap('n', 'ct', '<CMD>lua vim.lsp.buf.type_definition()<CR>', opts)
+-- hover action
+keymap('n', 'ch', '<CMD>lua vim.lsp.buf.hover()<CR>', opts)
