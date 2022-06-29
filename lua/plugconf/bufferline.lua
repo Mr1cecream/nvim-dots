@@ -1,4 +1,4 @@
-require('bufferline').setup {
+PSetup('bufferline', {
     -- mode = 'tabs',
     diagnostics = 'nvim_lsp',
     offsets = {
@@ -9,4 +9,4 @@ require('bufferline').setup {
             text_align = "left"
         }
     }
-}
+})

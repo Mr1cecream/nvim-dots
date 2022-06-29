@@ -2,7 +2,7 @@ local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- rename
-keymap({ 'n', 'v' }, 'cr', '<CMD>lua vim.lsp.buf.rename()<CR>', opts)
+keymap('n', 'cr', '<CMD>lua vim.lsp.buf.rename()<CR>', opts)
 -- code actions
 keymap('n', 'ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
 -- definition

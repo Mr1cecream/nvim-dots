@@ -1,3 +1,3 @@
-require('neoscroll').setup {
+PSetup('neoscroll', {
     respect_scrolloff = true,
-}
+})

@@ -1,4 +1,4 @@
-require('nvim-treesitter.configs').setup {
+PSetup('nvim-treesitter.configs', {
     ensure_installed = {
         'bash',
         'c_sharp',
@@ -18,4 +18,4 @@ require('nvim-treesitter.configs').setup {
     highlight = {
         enable = true,
     }
-}
+})

@@ -1,3 +1,3 @@
-require('better_escape').setup {
-    mapping = {'jk'},
-}
+PSetup('better_escape', {
+    mapping = { 'jk' },
+})

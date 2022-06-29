@@ -1,1 +1,1 @@
-require('nvim-tree').setup()
+PSetup('nvim-tree')

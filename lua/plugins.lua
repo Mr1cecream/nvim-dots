@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
     use 'danymat/neogen'
     use 'max397574/better-escape.nvim'
     use 'tpope/vim-repeat'
+    use 'jghauser/mkdir.nvim'
 
     use 'nvim-neorg/neorg'
     -- icons

@@ -11,5 +11,5 @@ local configs = {
 }
 
 for _, conf in ipairs(configs) do
-    require('keybinds/' .. conf)
+    PRequire('keybinds/' .. conf)
 end

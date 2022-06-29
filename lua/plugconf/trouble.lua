@@ -1,3 +1,3 @@
-require('trouble').setup {
+PSetup('trouble', {
     auto_close = true,
-}
+})

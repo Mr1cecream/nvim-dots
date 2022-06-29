@@ -1,4 +1,4 @@
-require('neorg').setup {
+PSetup('neorg', {
     load = {
         ["core.defaults"] = {},
         ["core.norg.qol.toc"] = {},
@@ -11,4 +11,4 @@ require('neorg').setup {
             },
         },
     }
-}
+})

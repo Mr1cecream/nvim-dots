@@ -1,11 +1,22 @@
 require('impatient')
 
+function PSetup(module, config)
+    if module == nil then
+        return
+    end
+    local ok, loaded = pcall(require, module)
+    if not ok then
+        print('Failed to load ' .. module)
+        return
+    end
+    loaded.setup(config)
+end
+
 local configs = {
     'autopairs', -- load autopairs config module
     'better-escape', -- load better-escape.nvim config module
     'bufferline', -- load bufferline config module
     'cmp', -- load cmp config module
-    'indent-blankline', -- load indent-blankline.nvim config module
     'lsp', -- load nvim-lsp config module
     'lualine', -- load lualine config module
     'neorg', -- load neorg config module
@@ -21,11 +32,12 @@ local configs = {
 }
 
 for _, conf in ipairs(configs) do
-    require('plugconf/' .. conf)
+    PRequire('plugconf/' .. conf)
 end
 
-require('hop').setup()
-require('neogen').setup()
-require('todo-comments').setup()
-require('rust-tools').setup()
-require('crates').setup()
+PSetup('hop')
+PSetup('neogen')
+PSetup('todo-comments')
+PSetup('rust-tools')
+PSetup('crates')
+PSetup('indent_blankline')

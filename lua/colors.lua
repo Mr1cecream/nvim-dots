@@ -1,6 +1,10 @@
 vim.opt.termguicolors = true
 
-local ayu = require('ayu')
+local ok, ayu = pcall(require, 'ayu')
+if not ok then
+    print('Failed to load ayu')
+    return
+end
 ayu.setup({
     mirage = true,
     overrides = {
