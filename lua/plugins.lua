@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
     use { 'phaazon/hop.nvim', branch = 'v1' }
     use 'nacro90/numb.nvim'
     use 'karb94/neoscroll.nvim'
-    use 'preservim/nerdcommenter'
+    use 'numToStr/Comment.nvim'
     use 'danymat/neogen'
     use 'max397574/better-escape.nvim'
     use 'tpope/vim-repeat'

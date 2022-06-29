@@ -21,7 +21,6 @@ local configs = {
     'lualine', -- load lualine config module
     'neorg', -- load neorg config module
     'neoscroll', -- load neoscroll config module
-    'nerdcommenter', -- load nerdcommenter config module
     'numb', -- load numb.nvim config module
     'nvimtree', -- load nvim-tree config module
     'popui', -- load popui.nvim config module
@@ -41,3 +40,4 @@ PSetup('todo-comments')
 PSetup('rust-tools')
 PSetup('crates')
 PSetup('indent_blankline')
+PSetup('Comment')
