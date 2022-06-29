@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-autopairs'
     use 'folke/trouble.nvim'
     use 'lukas-reineke/lsp-format.nvim'
+    use 'ray-x/lsp_signature.nvim'
     -- tools
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-tree.lua'
