@@ -47,6 +47,7 @@ return require('packer').startup(function(use)
     use { 'sheerun/vim-polyglot', setup = require('plugconf/polyglot') }
     use 'folke/todo-comments.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
+    use 'norcalli/nvim-colorizer.lua'
     -- language servers
     use 'elkowar/yuck.vim'
     -- language specific
