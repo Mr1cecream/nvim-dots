@@ -19,6 +19,9 @@ set.mouse = 'a'
 set.clipboard = 'unnamedplus'
 set.signcolumn = 'number'
 set.scrolloff = 5
+set.wrap = true
+set.linebreak = true
+set.list = false
 
 vim.cmd [[
 	syntax enable
