@@ -34,7 +34,7 @@ if not ok then
     print('Failed to load lspconfig')
     return
 end
-local servers = { 'rust_analyzer', 'sumneko_lua', 'csharp_ls', 'bashls', 'html' }
+local servers = { 'rust_analyzer', 'sumneko_lua', 'csharp_ls', 'bashls', 'html', 'clangd' }
 for _, lsp in pairs(servers) do
     lspconfig[lsp].setup {
         on_attach = on_attach,
