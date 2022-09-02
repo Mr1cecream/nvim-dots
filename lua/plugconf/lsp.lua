@@ -6,6 +6,7 @@ if not ok then
     print('Failed to load lsp-format')
     return
 end
+lsp_format.setup()
 local lsp_signature
 ok, lsp_signature = pcall(require, 'lsp_signature')
 if not ok then
