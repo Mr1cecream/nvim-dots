@@ -1,3 +1,3 @@
 PSetup('better_escape', {
-    mapping = { 'jk' },
+    mapping = { 'jk', 'ne' },
 })
