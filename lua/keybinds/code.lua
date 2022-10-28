@@ -2,16 +2,16 @@ local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- rename
-keymap('n', 'cr', '<CMD>lua vim.lsp.buf.rename()<CR>', opts)
+keymap('n', 'cr', vim.lsp.buf.rename, opts)
 -- code actions
-keymap('n', 'ca', '<CMD>lua vim.lsp.buf.code_action()<CR>', opts)
+keymap('n', 'ca', vim.lsp.buf.code_action, opts)
 -- definition
-keymap('n', 'cd', '<CMD>lua vim.lsp.buf.definition()<CR>', opts)
+keymap('n', 'cd', vim.lsp.buf.definition, opts)
 -- type definition
-keymap('n', 'ct', '<CMD>lua vim.lsp.buf.type_definition()<CR>', opts)
+keymap('n', 'ct', vim.lsp.buf.type_definition, opts)
 -- hover action
-keymap('n', 'ch', '<CMD>lua vim.lsp.buf.hover()<CR>', opts)
+keymap('n', 'ch', vim.lsp.buf.hover, opts)
 -- references
-keymap('n', 'cx', '<CMD>lua vim.lsp.buf.references()<CR>', opts)
+keymap('n', 'cx', vim.lsp.buf.references, opts)
 -- signature help
-keymap('n', 'cs', '<CMD>lua vim.lsp.buf.signature_help()<CR>', opts)
+keymap('n', 'cs', vim.lsp.buf.signature_help, opts)
