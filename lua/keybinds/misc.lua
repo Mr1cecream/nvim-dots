@@ -1,6 +1,8 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+vim.g.mapleader = " "
+
 -- refresh config
 keymap('n',
     '<Leader><Leader>',
