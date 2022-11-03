@@ -39,3 +39,9 @@ keymap('n', '<C-L>', '<CMD>noh<CR>')
 
 -- Hop
 keymap('n', 't', '<CMD>HopChar2<CR>', opts)
+
+-- Twilight
+keymap('n', '<Leader>w', '<CMD>Twilight<CR>', opts)
+
+-- Twilight
+keymap('n', '<Leader>z', '<CMD>ZenMode<CR>', opts)

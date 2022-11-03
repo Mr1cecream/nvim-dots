@@ -28,6 +28,8 @@ return require('packer').startup(function(use)
     use { 'hood/popui.nvim', requires = { 'RishabhRD/popfix' } }
     use 'zane-/howdoi.nvim'
     use 'folke/which-key.nvim'
+    use 'folke/twilight.nvim'
+    use 'folke/zen-mode.nvim'
 
     use { 'phaazon/hop.nvim', branch = 'v1' }
     use 'nacro90/numb.nvim'
