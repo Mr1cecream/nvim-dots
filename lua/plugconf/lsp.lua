@@ -25,8 +25,9 @@ local on_attach = function(client, bufnr)
     }, bufnr)
 end
 
-PSetup('nvim-lsp-installer', {
-    automatic_installation = true
+PSetup('mason')
+PSetup('mason-lspconfig', {
+    ensure_installed = { 'sumneko_lua', 'rust_analyzer' }, -- automatically install lua and rust LSPs
 })
 
 local lspconfig
