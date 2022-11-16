@@ -1,3 +1,3 @@
 PSetup('trouble', {
-    auto_close = true,
+	auto_close = true,
 })

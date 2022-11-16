@@ -23,8 +23,8 @@ set.wrap = true
 set.linebreak = true
 set.list = false
 
-vim.cmd [[
-	syntax enable
-	filetype plugin on
-	filetype plugin indent on
-]]
+vim.cmd([[
+syntax enable
+filetype plugin on
+filetype plugin indent on
+]])

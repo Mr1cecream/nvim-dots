@@ -1,4 +1,4 @@
 PSetup('better_escape', {
-    mapping = { 'jk', 'jj' },
-    timeout = 150,
+	mapping = { 'jk', 'jj' },
+	timeout = 150,
 })

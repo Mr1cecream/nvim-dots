@@ -1,7 +1,7 @@
 PSetup('lualine', {
-    options = {
-        component_separators = ' | ',
-        section_seperators = '',
-        globalstatus = true,
-    }
+	options = {
+		component_separators = ' | ',
+		section_seperators = '',
+		globalstatus = true,
+	},
 })

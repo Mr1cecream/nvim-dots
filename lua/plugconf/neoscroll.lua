@@ -1,3 +1,3 @@
 PSetup('neoscroll', {
-    respect_scrolloff = true,
+	respect_scrolloff = true,
 })

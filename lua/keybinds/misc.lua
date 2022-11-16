@@ -1,17 +1,13 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
 -- refresh config
-keymap('n',
-    '<Leader><Leader>',
-    function()
-        _LOADED = nil
-        vim.cmd [[source $MYVIMRC]]
-    end,
-    opts
-)
+keymap('n', '<Leader><Leader>', function()
+	_LOADED = nil
+	vim.cmd([[source $MYVIMRC]])
+end, opts)
 
 -- sync packer
 keymap('n', '<Leader>sp', '<CMD>PackerSync<CR>', opts)
