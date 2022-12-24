@@ -8,7 +8,7 @@ function PRequire(module, callback)
     local ok, loaded = pcall(require, module)
     if not ok then
         print('Failed to load ' .. module)
-        return nil
+        return {}
     end
     if callback ~= nil then
         callback(loaded)

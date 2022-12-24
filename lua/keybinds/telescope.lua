@@ -1,9 +1,6 @@
-local keymap = vim.keymap.set
-local opts = { noremap = true, silent = true }
-
-keymap('n', 'ff', '<CMD>Telescope find_files<CR>', opts)
-keymap('n', 'fb', '<CMD>Telescope buffers<CR>', opts)
-keymap('n', 'fg', '<CMD>Telescope live_grep<CR>', opts)
-keymap('n', 'fh', '<CMD>Telescope howdoi<CR>', opts)
-keymap('n', 'fp', '<CMD>Telescope projects<CR>', opts)
-keymap('n', 'fk', '<CMD>Telescope keymaps<CR>', opts)
+Keymap('n', 'ff', '<CMD>Telescope find_files<CR>', Opts)
+Keymap('n', 'fb', '<CMD>Telescope buffers<CR>', Opts)
+Keymap('n', 'fg', '<CMD>Telescope live_grep<CR>', Opts)
+Keymap('n', 'fh', '<CMD>Telescope howdoi<CR>', Opts)
+Keymap('n', 'fp', '<CMD>Telescope projects<CR>', Opts)
+Keymap('n', 'fk', '<CMD>Telescope keymaps<CR>', Opts)

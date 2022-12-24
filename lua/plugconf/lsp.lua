@@ -9,7 +9,7 @@ local lsp_signature = PRequire('lsp_signature')
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-    if lsp_signature ~= nil then
+    if lsp_signature ~= {} then
         lsp_signature.on_attach({
             bind = true,
             handler_opts = {

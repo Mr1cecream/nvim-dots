@@ -1,43 +1,40 @@
-local keymap = vim.keymap.set
-local opts = { noremap = true, silent = true }
-
 vim.g.mapleader = ' '
 
 -- refresh config
-keymap('n', '<Leader><Leader>', function()
+Keymap('n', '<Leader><Leader>', function()
     _LOADED = nil
     vim.cmd([[source $MYVIMRC]])
-end, opts)
+end, Opts)
 
 -- sync packer
-keymap('n', '<Leader>sp', '<CMD>PackerSync<CR>', opts)
+Keymap('n', '<Leader>sp', '<CMD>PackerSync<CR>', Opts)
 
 -- window navigation
-keymap('n', '<C-<Left>>', '<C-w>h', opts)
-keymap('n', '<C-<Down>>', '<C-w>j', opts)
-keymap('n', '<C-<Up>>', '<C-w>k', opts)
-keymap('n', '<C-<Right>>', '<C-w>l', opts)
+Keymap('n', '<C-<Left>>', '<C-w>h', Opts)
+Keymap('n', '<C-<Down>>', '<C-w>j', Opts)
+Keymap('n', '<C-<Up>>', '<C-w>k', Opts)
+Keymap('n', '<C-<Right>>', '<C-w>l', Opts)
 
 -- resize
--- keymap('n', '<C-K>', '<CMD>resize -2<CR', opts)
--- keymap('n', '<C-J>', '<CMD>resize +2<CR', opts)
--- keymap('n', '<C-H>', '<CMD>vertical resize -2<CR', opts)
--- keymap('n', '<C-L>', '<CMD>vertical resize +2<CR', opts)
+-- Keymap('n', '<C-K>', '<CMD>resize -2<CR', Opts)
+-- Keymap('n', '<C-J>', '<CMD>resize +2<CR', Opts)
+-- Keymap('n', '<C-H>', '<CMD>vertical resize -2<CR', Opts)
+-- Keymap('n', '<C-L>', '<CMD>vertical resize +2<CR', Opts)
 
 -- move lines
-keymap('n', '<A-<Left>>', '<CMD>m .+1<CR>==', opts)
-keymap('n', '<A-<Down>>', '<CMD>m .-2<CR>==', opts)
-keymap('v', '<A-<Up>>', '<CMD>m .+1<CR>gv=gv', opts)
-keymap('v', '<A-<Right>>', '<CMD>m .-2<CR>gv=gv', opts)
+Keymap('n', '<A-<Left>>', '<CMD>m .+1<CR>==', Opts)
+Keymap('n', '<A-<Down>>', '<CMD>m .-2<CR>==', Opts)
+Keymap('v', '<A-<Up>>', '<CMD>m .+1<CR>gv=gv', Opts)
+Keymap('v', '<A-<Right>>', '<CMD>m .-2<CR>gv=gv', Opts)
 
 -- Un-highlight
-keymap('n', '<C-L>', '<CMD>noh<CR>')
+Keymap('n', '<C-L>', '<CMD>noh<CR>')
 
 -- Hop
-keymap('n', 't', '<CMD>HopChar2<CR>', opts)
+Keymap('n', 't', '<CMD>HopChar2<CR>', Opts)
 
 -- Twilight
-keymap('n', '<Leader>w', '<CMD>Twilight<CR>', opts)
+Keymap('n', '<Leader>w', '<CMD>Twilight<CR>', Opts)
 
 -- Twilight
-keymap('n', '<Leader>z', '<CMD>ZenMode<CR>', opts)
+Keymap('n', '<Leader>z', '<CMD>ZenMode<CR>', Opts)

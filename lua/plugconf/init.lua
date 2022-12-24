@@ -1,4 +1,4 @@
-require('impatient')
+PRequire('impatient')
 
 --- Protected require and setup
 ---@param module string

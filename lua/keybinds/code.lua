@@ -1,17 +1,14 @@
-local keymap = vim.keymap.set
-local opts = { noremap = true, silent = true }
-
 -- rename
-keymap('n', 'cr', vim.lsp.buf.rename, opts)
+Keymap('n', 'cr', vim.lsp.buf.rename, Opts)
 -- code actions
-keymap('n', 'ca', vim.lsp.buf.code_action, opts)
+Keymap('n', 'ca', vim.lsp.buf.code_action, Opts)
 -- definition
-keymap('n', 'cd', vim.lsp.buf.definition, opts)
+Keymap('n', 'cd', vim.lsp.buf.definition, Opts)
 -- type definition
-keymap('n', 'ct', vim.lsp.buf.type_definition, opts)
+Keymap('n', 'ct', vim.lsp.buf.type_definition, Opts)
 -- hover action
-keymap('n', 'ch', vim.lsp.buf.hover, opts)
+Keymap('n', 'ch', vim.lsp.buf.hover, Opts)
 -- references
-keymap('n', 'cx', vim.lsp.buf.references, opts)
+Keymap('n', 'cx', vim.lsp.buf.references, Opts)
 -- signature help
-keymap('n', 'cs', vim.lsp.buf.signature_help, opts)
+Keymap('n', 'cs', vim.lsp.buf.signature_help, Opts)

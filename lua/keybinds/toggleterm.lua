@@ -1,4 +1,2 @@
-local keymap = vim.keymap.set
-
-keymap('t', '<Esc>', '<C-\\><C-n><C-w>k', { noremap = true, silent = true })
-keymap('n', '<Leader>p', '<CMD>ToggleTerm<CR>')
+Keymap('t', '<Esc>', '<C-\\><C-n><C-w>k', Opts)
+Keymap('n', '<Leader>p', '<CMD>ToggleTerm<CR>', Opts)
