@@ -30,7 +30,6 @@ local on_attach = function(client, bufnr)
 end
 
 PSetup('mason')
-PSetup('mason-lspconfig')
 
 PRequire('mason-null-ls', function(mason_null_ls)
     mason_null_ls.setup({
@@ -43,15 +42,18 @@ PRequire('mason-null-ls', function(mason_null_ls)
     mason_null_ls.setup_handlers()
 end)
 
-PRequire('lspconfig', function(lspconfig)
-    local servers = { 'rust_analyzer', 'sumneko_lua', 'csharp_ls', 'bashls', 'html', 'clangd' }
-    for _, lsp in pairs(servers) do
-        lspconfig[lsp].setup({
-            on_attach = on_attach,
-            capabilities = capabilities,
-            flags = {
-                debounce_text_changes = 150,
-            },
+PRequire('mason-lspconfig', function(mason_lspconfig)
+    PRequire('lspconfig', function(lspconfig)
+        mason_lspconfig.setup_handlers({
+            function(lsp)
+                lspconfig[lsp].setup({
+                    on_attach = on_attach,
+                    capabilities = capabilities,
+                    flags = {
+                        debounce_text_changes = 150,
+                    },
+                })
+            end,
         })
-    end
+    end)
 end)
