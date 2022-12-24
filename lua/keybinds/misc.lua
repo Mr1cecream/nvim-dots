@@ -5,8 +5,8 @@ vim.g.mapleader = ' '
 
 -- refresh config
 keymap('n', '<Leader><Leader>', function()
-	_LOADED = nil
-	vim.cmd([[source $MYVIMRC]])
+    _LOADED = nil
+    vim.cmd([[source $MYVIMRC]])
 end, opts)
 
 -- sync packer
