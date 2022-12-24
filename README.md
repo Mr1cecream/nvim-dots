@@ -3,9 +3,8 @@ My neovim config.
 
 
 ## Requirements
-- [packer.nvim](https://github.com/wbthomason/packer.nvim)
-- Neovim 0.7.0+
-- git (for cloning the repo)
+- Neovim 0.8.0+
+- git
 
 ## Installation
 
@@ -13,12 +12,12 @@ My neovim config.
 Run this in your terminal:
 ```bash
 git clone https://github.com/Mr1cecream/nvim-dots ~/.config/nvim
-nvim +:PackerSync
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 
 #### Windows (Powershell)
 Run this in your terminal:
 ```powershell
 git clone https://github.com/Mr1cecream/nvim-dots "$env:LOCALAPPDATA\nvim"
-nvim +:PackerSync
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
