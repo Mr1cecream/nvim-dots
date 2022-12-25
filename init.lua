@@ -7,7 +7,7 @@ vim = vim
 function PRequire(module, callback)
     local ok, loaded = pcall(require, module)
     if not ok then
-        print('Failed to load ' .. module)
+        print('Failed to load ' .. module .. '. ' .. loaded)
         return {}
     end
     if callback ~= nil then

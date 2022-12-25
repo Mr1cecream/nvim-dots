@@ -4,15 +4,9 @@ PRequire('impatient')
 ---@param module string
 ---@param[opt=nil] config table
 function PSetup(module, config)
-    if module == nil then
-        return
-    end
-    local ok, loaded = pcall(require, module)
-    if not ok then
-        print('Failed to load ' .. module)
-        return
-    end
-    loaded.setup(config)
+    PRequire(module, function(loaded)
+        loaded.setup(config)
+    end)
 end
 
 local configs = {
