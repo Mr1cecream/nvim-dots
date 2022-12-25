@@ -44,16 +44,31 @@ end)
 
 PRequire('mason-lspconfig', function(mason_lspconfig)
     PRequire('lspconfig', function(lspconfig)
+        local function setup_lsp(lsp)
+            lspconfig[lsp].setup({
+                on_attach = on_attach,
+                capabilities = capabilities,
+                flags = {
+                    debounce_text_changes = 150,
+                },
+            })
+        end
+
+        -- set up LSP servers installed by Mason
         mason_lspconfig.setup_handlers({
             function(lsp)
-                lspconfig[lsp].setup({
-                    on_attach = on_attach,
-                    capabilities = capabilities,
-                    flags = {
-                        debounce_text_changes = 150,
-                    },
-                })
+                setup_lsp(lsp)
             end,
         })
+
+        -- set up LSP servers installed manually
+        local manual_servers = {
+            { lsp_name = 'openscad_ls', cmd = 'openscad-language-server' },
+        }
+        for _, lsp in ipairs(manual_servers) do
+            if vim.fn.executable(lsp.cmd) == 1 then
+                setup_lsp(lsp.lsp_name)
+            end
+        end
     end)
 end)
