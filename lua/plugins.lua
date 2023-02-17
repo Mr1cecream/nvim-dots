@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
     use('kyazdani42/nvim-tree.lua')
     use({ 'akinsho/bufferline.nvim', tag = 'v2.*' })
 
-    use({ 'akinsho/toggleterm.nvim', tag = 'v1.*' })
+    use({ 'akinsho/toggleterm.nvim', tag = '*' })
     use({ 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } })
     use({ 'hood/popui.nvim', requires = { 'RishabhRD/popfix' } })
     use('zane-/howdoi.nvim')
