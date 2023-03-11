@@ -1,6 +1,6 @@
 vim.opt.termguicolors = true
 
-PRequire('ayu', function(ayu)
+--[[ PRequire('ayu', function(ayu)
     ayu.setup({
         mirage = true,
         overrides = {
@@ -12,4 +12,6 @@ PRequire('ayu', function(ayu)
     })
 
     ayu.colorscheme()
-end)
+end) ]]
+
+vim.cmd.colorscheme('nirvana')
