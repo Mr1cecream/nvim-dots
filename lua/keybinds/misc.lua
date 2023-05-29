@@ -15,18 +15,6 @@ Keymap('n', '<C-<Down>>', '<C-w>j', Opts)
 Keymap('n', '<C-<Up>>', '<C-w>k', Opts)
 Keymap('n', '<C-<Right>>', '<C-w>l', Opts)
 
--- resize
--- Keymap('n', '<C-K>', '<CMD>resize -2<CR', Opts)
--- Keymap('n', '<C-J>', '<CMD>resize +2<CR', Opts)
--- Keymap('n', '<C-H>', '<CMD>vertical resize -2<CR', Opts)
--- Keymap('n', '<C-L>', '<CMD>vertical resize +2<CR', Opts)
-
--- move lines
-Keymap('n', '<A-<Left>>', '<CMD>m .+1<CR>==', Opts)
-Keymap('n', '<A-<Down>>', '<CMD>m .-2<CR>==', Opts)
-Keymap('v', '<A-<Up>>', '<CMD>m .+1<CR>gv=gv', Opts)
-Keymap('v', '<A-<Right>>', '<CMD>m .-2<CR>gv=gv', Opts)
-
 -- Un-highlight
 Keymap('n', '<C-L>', '<CMD>noh<CR>')
 
