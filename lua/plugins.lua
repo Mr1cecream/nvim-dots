@@ -52,7 +52,6 @@ return require('packer').startup(function(use)
     use('jghauser/mkdir.nvim')
 
     use('ahmedkhalf/project.nvim')
-    use('nvim-neorg/neorg')
     -- icons
     use('kyazdani42/nvim-web-devicons')
     -- syntax highlighting

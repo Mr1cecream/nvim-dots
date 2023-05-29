@@ -16,7 +16,6 @@ local configs = {
     'cmp', -- load cmp config module
     'lsp', -- load nvim-lsp config module
     'lualine', -- load lualine config module
-    'neorg', -- load neorg config module
     'neoscroll', -- load neoscroll config module
     'numb', -- load numb.nvim config module
     'nvimtree', -- load nvim-tree config module
