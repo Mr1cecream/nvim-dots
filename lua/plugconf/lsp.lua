@@ -31,16 +31,14 @@ end
 
 PSetup('mason')
 
-PRequire('mason-null-ls', function(mason_null_ls)
-    mason_null_ls.setup({
-        automatic_installation = false,
-        automatic_setup = true,
-    })
-    PSetup('null-ls', {
-        on_attach = on_attach,
-    })
-    mason_null_ls.setup_handlers()
-end)
+PSetup('null-ls', {
+    on_attach = on_attach,
+})
+
+PSetup('mason-null-ls', {
+    automatic_setup = true,
+    handlers = {},
+})
 
 PRequire('mason-lspconfig', function(mason_lspconfig)
     PRequire('lspconfig', function(lspconfig)
