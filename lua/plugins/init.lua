@@ -13,6 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    { 'folke/lazy.nvim', version = '*' },
     require('plugins.config.lsp'),
     require('plugins.config.syntax-highlight'),
     require('plugins.config.telescope'),
@@ -24,4 +25,12 @@ require('lazy').setup({
     require('plugins.config.comment'),
     require('plugins.config.languages'),
     require('plugins.config.neoscroll'),
+    require('plugins.config.toggleterm'),
+
+    default = {
+        lazy = true,
+    },
+    install = {
+        colorscheme = 'nirvana',
+    },
 })
