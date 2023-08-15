@@ -10,4 +10,8 @@ return {
         event = 'BufEnter Cargo.toml',
         config = true,
     },
+    {
+        'elkowar/yuck.vim',
+        event = 'BufReadPre *.yuck',
+    },
 }
