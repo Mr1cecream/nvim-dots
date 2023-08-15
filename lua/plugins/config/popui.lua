@@ -12,12 +12,7 @@ return {
                     require('popui.diagnostics-navigator')()
                 end,
             },
-            {
-                ',r',
-                function()
-                    require('popui.references-navigator')()
-                end,
-            },
         },
+        lazy = false,
     },
 }

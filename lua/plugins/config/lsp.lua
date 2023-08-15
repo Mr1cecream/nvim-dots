@@ -38,7 +38,8 @@ return {
             },
         },
         keys = {
-            { ',a', vim.lsp.buf.rename },
+            { ',r', vim.lsp.buf.rename },
+            { ',a', vim.lsp.buf.code_action },
             { ',h', vim.lsp.buf.hover },
             { ',s', vim.lsp.buf.signature_help },
         },
