@@ -81,7 +81,7 @@ M.highlights_base = function(colors)
     PreCondit = { fg = colors.color12 },
     Special = { fg = colors.color12 },
     SpecialChar = { fg = colors.color12 },
-    Tag = { fg = colors.color15 },
+    Tag = { fg = colors.color12 },
     Debug = { fg = colors.color13 },
     Delimiter = { fg = colors.color7 },
     SpecialComment = { fg = colors.color8 },
