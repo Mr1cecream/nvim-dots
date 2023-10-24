@@ -22,6 +22,7 @@ require('lazy').setup({
     require('plugins.config.lualine'),
     require('plugins.config.flash'),
     require('plugins.config.popui'),
+    require('plugins.config.prism'),
     require('plugins.config.comment'),
     require('plugins.config.languages'),
     require('plugins.config.neoscroll'),
@@ -29,8 +30,5 @@ require('lazy').setup({
 
     default = {
         lazy = true,
-    },
-    install = {
-        colorscheme = 'nirvana',
     },
 })
