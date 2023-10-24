@@ -5,7 +5,12 @@ return {
         opts = {
             shade_terminals = false,
             open_mapping = [[<Leader>p]],
+            insert_mappings = false,
             autochdir = true,
         },
+        keys = {
+            { '<Leader>p', mode = 'n' },
+        },
+        cmd = 'ToggleTerm',
     },
 }
