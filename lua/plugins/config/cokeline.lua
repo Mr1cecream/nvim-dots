@@ -17,7 +17,7 @@ return {
             },
         },
         config = function()
-            local get_hex = require('cokeline.utils').get_hex
+            local get_hl_attr = require('cokeline.hlgroups').get_hl_attr
             local is_picking_focus = require('cokeline.mappings').is_picking_focus
             local is_picking_close = require('cokeline.mappings').is_picking_close
 
@@ -38,9 +38,9 @@ return {
                 },
                 default_hl = {
                     fg = function(buffer)
-                        return buffer.is_focused and get_hex('Normal', 'fg') or get_hex('Comment', 'fg')
+                        return buffer.is_focused and get_hl_attr('Normal', 'fg') or get_hl_attr('Comment', 'fg')
                     end,
-                    bg = get_hex('ColorColumn', 'bg'),
+                    bg = get_hl_attr('ColorColumn', 'bg'),
                 },
                 fill_hl = 'TabLineFill',
                 components = {
@@ -58,8 +58,8 @@ return {
                                 or buffer.devicon.icon
                         end,
                         fg = function(buffer)
-                            return (is_picking_focus() and get_hex('DiagnosticWarn', 'fg'))
-                                or (is_picking_close() and get_hex('DiagnosticError', 'fg'))
+                            return (is_picking_focus() and get_hl_attr('DiagnosticWarn', 'fg'))
+                                or (is_picking_close() and get_hl_attr('DiagnosticError', 'fg'))
                                 or buffer.devicon.color
                         end,
                         style = function(_)
@@ -73,7 +73,7 @@ return {
                         text = function(buffer)
                             return buffer.unique_prefix
                         end,
-                        fg = get_hex('Comment', 'fg'),
+                        fg = get_hl_attr('Comment', 'fg'),
                         italic = true,
                     },
                     {
