@@ -21,6 +21,7 @@ require('lazy').setup({
     require('plugins.config.cokeline'),
     require('plugins.config.lualine'),
     require('plugins.config.flash'),
+    require('plugins.config.gitsigns'),
     require('plugins.config.popui'),
     require('plugins.config.prism'),
     require('plugins.config.comment'),
