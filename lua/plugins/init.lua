@@ -25,6 +25,7 @@ require('lazy').setup({
     require('plugins.config.hbac'),
     require('plugins.config.popui'),
     require('plugins.config.prism'),
+    require('plugins.config.spider'),
     require('plugins.config.comment'),
     require('plugins.config.languages'),
     require('plugins.config.neoscroll'),
