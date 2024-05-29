@@ -20,6 +20,7 @@ require('lazy').setup({
     require('plugins.config.neotree'),
     require('plugins.config.cokeline'),
     require('plugins.config.lualine'),
+    require('plugins.config.dap'),
     require('plugins.config.flash'),
     require('plugins.config.gitsigns'),
     require('plugins.config.hbac'),
