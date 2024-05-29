@@ -12,20 +12,11 @@ return {
         },
         config = function()
             require('nvim-treesitter.configs').setup({
-                ensure_installed = {
-                    'bash',
-                    'lua',
-                    'vim',
-                },
                 highlight = {
                     enable = true,
                 },
                 autotag = {
                     enable = true,
-                },
-                context_commentstring = {
-                    enable = true,
-                    enable_autocmd = false,
                 },
             })
         end,
